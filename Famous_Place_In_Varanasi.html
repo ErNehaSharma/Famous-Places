@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Ghats and Temples in Varanasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            transition: background-color 0.5s; /* Add transition effect for smooth color changes */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .ghat-temple {
+            margin-bottom: 20px;
+        }
+
+        .ghat-temple img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .ghat-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Famous Ghats and Temples in Varanasi</h1>
+    </header>
+
+    <div class="container">
+        <div class="ghat-temple">
+            <h2>Dasaswamedh Ghat</h2>
+            <p>Dasaswamedh Ghat is one of the most famous ghats in Varanasi.</p>
+            <img src="dasaswamedh.jpg" alt="Dasaswamedh Ghat">
+        </div>
+
+        <div class="ghat-temple">
+            <h2>Kashi Vishwanath Temple</h2>
+            <p>The Kashi Vishwanath Temple is one of the holiest temples in Varanasi.</p>
+            <img src="vishwanath.jpg" alt="Kashi Vishwanath Temple">
+        </div>
+
+        <!-- Add more ghats and temples here -->
+
+        <div class="ghat-list">
+            <h2>Famous Ghats in Varanasi</h2>
+            <ul>
+                <li>Dasaswamedh Ghat</li>
+                <li>Assi Ghat</li>
+                <li>Manikarnika Ghat</li>
+                <li>Panchganga Ghat</li>
+                <li>Harishchandra Ghat</li>
+                <!-- Add more ghats to the list -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to change the background color dynamically
+        const colors = ["#ff8a00", "#e52e71", "#3498db", "#2ecc71"];
+        let colorIndex = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+            setTimeout(changeBackgroundColor, 3000); // Change color every 3 seconds
+        }
+
+        changeBackgroundColor(); // Start the color-changing process
+    </script>
+</body>
+</html>
